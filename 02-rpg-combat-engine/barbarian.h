@@ -1,13 +1,4 @@
-/*
-assignment 1
 
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date
-2025/10/11
-*/
 
 #ifndef SENECA_BARBARIAN_H
 #define SENECA_BARBARIAN_H
@@ -36,7 +27,7 @@ namespace seneca
         {
             return m_baseAttack + (static_cast<double>(m_weapon[0]) / 2) + (static_cast<double>(m_weapon[1]) / 2);
         }
-        // ref ai
+   
 
         int getDefenseAmnt() const override
         {
@@ -47,7 +38,7 @@ namespace seneca
         {
             return new Barbarian<T, Ability_t, Weapon_t>(*this);
         }
-        // ref ai
+      
 
         void attack(Character *enemy) override
         {
