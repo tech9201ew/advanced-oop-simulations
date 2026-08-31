@@ -1,6 +1,4 @@
-// Workshop 3 - STL Containers and Algorithms
-// 2024/11/03 - If this code works, it was created by Cornel
-//            - If it doesn't work, I don't know who wrote it.
+
 
 #include <iostream>
 #include <iomanip>
