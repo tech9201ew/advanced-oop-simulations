@@ -1,13 +1,3 @@
-/*
-assignment 1
-
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date
-2025/10/11
-*/
 
 #ifndef SENECA_TEAM_H
 #define SENECA_TEAM_H
@@ -39,7 +29,7 @@ namespace seneca
             }
             delete[] m_members;
         }
-        // ref ai
+
 
         Team(const Team &other) : m_name(other.m_name), m_members(nullptr), m_memberCount(0), m_capacity(0)
         {
@@ -84,7 +74,7 @@ namespace seneca
             }
             return *this;
         }
-        // ref ai
+
 
         Team(Team &&other) noexcept
             : m_name(other.m_name), m_members(other.m_members), m_memberCount(other.m_memberCount), m_capacity(other.m_capacity)
@@ -119,7 +109,7 @@ namespace seneca
             }
             return *this;
         }
-        // ref ai
+
 
         void addMember(const Character *c)
         {
