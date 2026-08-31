@@ -43,4 +43,3 @@ A collection of modular C++ applications demonstrating core object-oriented prog
 
 Each subproject includes a test harness (`tester_1.cpp`, `tester_2.cpp`, or `tester_3.cpp`) and sample output.
 
-Example compilation command (GCC 10.2+):
