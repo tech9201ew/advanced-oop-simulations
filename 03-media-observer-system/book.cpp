@@ -1,13 +1,4 @@
-/*
-assignment 3
 
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date
-2025/11/14
-*/
 
 #include "book.h"
 #include "settings.h"
@@ -55,7 +46,7 @@ void Book::display(std::ostream &out) const {
    }
 }
 
-// ref ai
+
 Book *Book::createItem(const std::string &strBook) {
 
    if (strBook.empty() || strBook[0] == '#') {
