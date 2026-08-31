@@ -1,0 +1,72 @@
+/*
+assignment 1
+
+Author: YI-LUN,WU
+Student ID: 173968231
+Email: ywu296@myseneca.ca
+
+Date
+2025/10/11
+*/
+
+#ifndef SENECA_CHARACTERTPL_H
+#define SENECA_CHARACTERTPL_H
+
+#include "character.h"
+
+namespace seneca
+{
+    template <typename T>
+    class CharacterTpl : public Character
+    {
+    private:
+        int m_healthMax;
+        T m_health;
+
+    public:
+        CharacterTpl(const char *name, int healthMax)
+            : Character(name), m_healthMax(healthMax), m_health()
+        {
+            m_health = healthMax;
+        }
+
+        void takeDamage(int dmg) override
+        {
+            m_health -= dmg;
+
+            int currentHealth = getHealth();
+            if (currentHealth <= 0)
+            {
+                m_health = 0;
+                std::cout << "    " << getName() << " has been defeated!" << std::endl;
+            }
+            else
+            {
+                std::cout << "    " << getName() << " took " << dmg << " damage, " << currentHealth << " health remaining." << std::endl;
+            }
+        }
+
+        int getHealth() const override
+        {
+            return static_cast<int>(m_health);
+        }
+
+        int getHealthMax() const override
+        {
+            return m_healthMax;
+        }
+
+        void setHealth(int health) override
+        {
+            m_health = health;
+        }
+
+        void setHealthMax(int health) override
+        {
+            m_healthMax = health;
+            m_health = health;
+        }
+    };
+}
+
+#endif
