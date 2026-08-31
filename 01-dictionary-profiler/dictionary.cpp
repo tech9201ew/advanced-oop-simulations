@@ -1,14 +1,3 @@
-/* 
-assignment 1 
-
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date       
-2025/09/25
-*/
-
 
 #include <fstream>   
 #include <utility>  
@@ -31,7 +20,6 @@ namespace seneca
 		}
 		return os;
 	}
-//ref ai
 
 
 	Dictionary::Dictionary(const char* filename) {
@@ -76,7 +64,6 @@ namespace seneca
 	}
 
 
-//ref ai
 	void Dictionary::searchWord(const char* word_to_find) const {
 		bool first_found = false;
 		std::string search_str(word_to_find);
