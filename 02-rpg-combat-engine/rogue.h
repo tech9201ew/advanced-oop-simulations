@@ -1,13 +1,4 @@
-/*
-assignment 1
 
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date
-2025/10/11
-*/
 
 #ifndef SENECA_ROGUE_H
 #define SENECA_ROGUE_H
@@ -63,7 +54,7 @@ namespace seneca
 
             enemy->takeDamage(damage);
         }
-        // ref ai
+
 
         void takeDamage(int dmg) override
         {
