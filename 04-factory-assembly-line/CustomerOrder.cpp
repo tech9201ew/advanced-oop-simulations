@@ -1,13 +1,4 @@
-/*
-assignment 4
 
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date
-2025/11/30
-*/
 
 #include "CustomerOrder.h"
 #include "Utilities.h"
@@ -36,7 +27,7 @@ namespace seneca
             tempList.push_back(util.extractToken(str, next_pos, more));
         }
 
-        // ref ai
+      
         m_cntItem = tempList.size();
         if (m_cntItem > 0)
         {
@@ -129,7 +120,7 @@ namespace seneca
         return true;
     }
 
-    // ref ai
+
     void CustomerOrder::fillItem(Station &station, std::ostream &os)
     {
         for (size_t i = 0; i < m_cntItem; i++)
