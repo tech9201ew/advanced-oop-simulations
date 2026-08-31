@@ -1,13 +1,3 @@
-/* 
-assignment 1 
-
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date       
-2025/09/25
-*/
 
 
 #ifndef SENECA_LOGGER_H
@@ -39,7 +29,6 @@ namespace seneca
 
         friend std::ostream& operator<<(std::ostream& os, const Logger& logger);
 
-        //ref ai
 	};
 
 	std::ostream& operator<<(std::ostream& os, const Logger& logger);
