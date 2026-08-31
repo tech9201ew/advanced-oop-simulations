@@ -1,13 +1,4 @@
-/*
-assignment 3
 
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date
-2025/11/14
-*/
 
 #include <algorithm>
 #include <functional>
@@ -86,7 +77,7 @@ void Collection::removeQuotes() {
       }
    };
 
-   // ref ai
+
    std::for_each(m_items.begin(), m_items.end(),
 
                  [trimQuotes](MediaItem *item) {
@@ -100,7 +91,6 @@ void Collection::removeQuotes() {
                  });
 }
 
-// ref ai
 void Collection::sort(const std::string &field) {
 
    std::sort(m_items.begin(), m_items.end(),
