@@ -1,13 +1,4 @@
-/*
-assignment 3
 
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date
-2025/11/14
-*/
 
 #include "tvShow.h"
 #include "settings.h"
@@ -118,7 +109,7 @@ TvShow *TvShow::createItem(const std::string &strShow) {
    }
 }
 
-// ref ai
+
 double TvShow::getEpisodeAverageLength() const {
    if (m_episodes.empty()) {
       return 0.0;
