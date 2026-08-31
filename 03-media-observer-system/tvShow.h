@@ -1,13 +1,4 @@
-/*
-assignment 3
 
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date
-2025/11/14
-*/
 
 #ifndef SENECA_TVSHOW_H
 #define SENECA_TVSHOW_H
@@ -57,7 +48,7 @@ class TvShow : public MediaItem {
    double getEpisodeAverageLength() const;
    std::list<std::string> getLongEpisodes() const;
 
-   // ref ai
+ 
    static unsigned int parseDuration(const std::string &durationStr) {
       if (durationStr.empty())
          return 0u;
@@ -92,7 +83,7 @@ class TvShow : public MediaItem {
       }
    }
 
-   // ref ai
+
    template <typename Collection_t>
    static void addEpisode(Collection_t &col, const std::string &strEpisode) {
 
