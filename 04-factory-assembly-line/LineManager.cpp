@@ -1,13 +1,3 @@
-/*
-assignment 4
-
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date
-2025/11/30
-*/
 
 #include "LineManager.h"
 #include "Utilities.h"
@@ -60,7 +50,7 @@ namespace seneca
         }
         ifs.close();
 
-        // ref ai
+      
         auto firstIter = std::find_if(m_activeLine.begin(), m_activeLine.end(), [&](Workstation *potentialFirst)
                                       { return std::none_of(m_activeLine.begin(), m_activeLine.end(), [&](Workstation *other)
                                                             { return other->getNextStation() == potentialFirst; }); });
@@ -73,7 +63,7 @@ namespace seneca
         m_cntCustomerOrder = g_pending.size();
     }
 
-    // ref ai
+
     void LineManager::reorderStations()
     {
         std::vector<Workstation *> sortedLine;
@@ -99,7 +89,7 @@ namespace seneca
             g_pending.pop_front();
         }
 
-        // ref ai
+        
         std::for_each(m_activeLine.begin(), m_activeLine.end(), [&](Workstation *ws)
                       { ws->fill(os); });
 
