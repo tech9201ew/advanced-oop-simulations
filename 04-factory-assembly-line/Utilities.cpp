@@ -1,13 +1,4 @@
-/*
-assignment 4
 
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date
-2025/11/30
-*/
 
 #include "Utilities.h"
 #include <iostream>
@@ -38,7 +29,7 @@ namespace seneca
             return "";
         }
 
-        // ref ai
+        
         std::string token = "";
         size_t end_pos = str.find(m_delimiter, next_pos);
 
