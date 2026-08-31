@@ -1,13 +1,4 @@
-/*
-assignment 1
 
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date
-2025/10/11
-*/
 
 #ifndef SENECA_GUILD_H
 #define SENECA_GUILD_H
