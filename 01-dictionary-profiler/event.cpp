@@ -1,13 +1,3 @@
-/* 
-assignment 1 
-
-Author: YI-LUN,WU
-Student ID: 173968231
-Email: ywu296@myseneca.ca
-
-Date       
-2025/09/25
-*/
 
 #include <iomanip> 
 #include "event.h"
@@ -49,7 +39,6 @@ namespace seneca
 			width = 11;
 		}
 
-        //ref ai
 		
 		os << std::right << std::setw(2) << counter << ": "
 		   << std::right << std::setw(40) << event.getName() << " -> "
